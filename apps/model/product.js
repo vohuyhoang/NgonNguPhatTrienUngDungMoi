@@ -1,8 +1,8 @@
 class Product {
-    id;
-    name;
+    _id;
+    Name;
+    Price;
     constructor() {
-
     }
 }
-module.exports = Product;
+module.exports = Product
