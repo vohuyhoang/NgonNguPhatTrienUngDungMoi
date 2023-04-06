@@ -1,7 +1,7 @@
 const { ObjectId } = require('mongodb');
 var config = require("./../../config/setting.json");
 class ProductService {
-    databaseConnection = require('../database/database');
+    databaseConnection = require('./../database/database');
     product = require('./../model/product');
 
     client;
@@ -10,7 +10,7 @@ class ProductService {
     constructor() {
         this.client = this.databaseConnection.getMongoClient();
         this.productDatabase = this.client.db(config.mongodb.database);
-        this.productCollection = this.productDatabase.collection("product");
+        this.productCollection = this.productDatabase.collection("dish");
     }
     async deleteProduct(id) {
         return await this.productCollection.deleteOne({ "_id": new ObjectId(id) });

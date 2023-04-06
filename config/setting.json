@@ -2,6 +2,9 @@
     "mongodb": {
         "username": "sa",
         "password": "sa",
-        "database": "demodb"
+        "database": "CookingTutorial"
+    },
+    "jwt": {
+        "secret": "goK!pusp6ThEdURUtRenOwUhAsWUCLheBazl!uJLPlS8EbreWLdrupIwabRAsiBu"
     }
 }
